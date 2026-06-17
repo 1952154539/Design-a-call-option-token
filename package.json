@@ -1,0 +1,19 @@
+{
+  "name": "design-a-call-option-token",
+  "version": "1.0.0",
+  "description": "A call option token (ERC20) implemented in Solidity — issue, trade, exercise, and settle",
+  "scripts": {
+    "compile": "hardhat compile",
+    "test": "hardhat test",
+    "node": "hardhat node",
+    "deploy": "hardhat run scripts/deploy.js --network localhost",
+    "demo": "hardhat run scripts/demo.js --network localhost"
+  },
+  "devDependencies": {
+    "@nomicfoundation/hardhat-toolbox": "^4.0.0",
+    "hardhat": "^2.19.0"
+  },
+  "dependencies": {
+    "@openzeppelin/contracts": "^5.0.0"
+  }
+}

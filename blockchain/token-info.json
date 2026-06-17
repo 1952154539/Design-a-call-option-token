@@ -1,0 +1,29 @@
+{
+  "network": "hardhat-local",
+  "optionToken": {
+    "address": "0xe7f1725E7734CE288F8367e1Bb143E90bb3F0512",
+    "name": "ETH Call Option",
+    "symbol": "ETH-CALL",
+    "decimals": 18,
+    "type": "ERC20 Call Option Token",
+    "underlying": "ETH (native)",
+    "strikePrice": "0.8 ETH per 1 ETH of underlying",
+    "strikePriceWei": "800000000000000000",
+    "expirationDate": "2026-06-24T03:48:42.000Z",
+    "expirationUnix": 1782272922,
+    "description": "Each option token (in wei) represents the right to buy 1 wei of ETH at 0.8 ETH strike price"
+  },
+  "optionPool": {
+    "address": "0x9fE46736679d2D9a65F0992F2272dE9f3c7fa6e0",
+    "type": "Constant Product AMM (x*y=k)",
+    "pair": "ETH-CALL / USDT",
+    "fee": "0.3%"
+  },
+  "usdt": {
+    "address": "0x5FbDB2315678afecb367f032d93F642f64180aa3",
+    "name": "Mock USDT",
+    "symbol": "USDT",
+    "decimals": 6,
+    "type": "Mock ERC20 for testing"
+  }
+}
