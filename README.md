@@ -123,7 +123,11 @@ npx hardhat run scripts/demo.js
 
 ## Demo 执行日志
 
-以下是 `scripts/demo.js` 的完整运行输出，模拟了从发行到期权清算的全部流程。
+> 完整原始日志保存在 [`blockchain/demo-output.log`](blockchain/demo-output.log)
+
+![Demo 执行日志截图](blockchain/demo-screenshot.png)
+
+以下是 `scripts/demo.js` 的最新运行输出（2026-06-17），模拟了从发行到期权清算的全部流程。
 
 ### Step 0 — 初始化参数
 
@@ -133,7 +137,7 @@ npx hardhat run scripts/demo.js
 池子期权量:     7.0 期权 Token
 池子 USDT 量:   700.00 USDT
 初始期权价格:   100 USDT / 期权 Token
-行权日期:       2026-06-24T03:48:42.000Z
+行权日期:       2026-06-24T03:53:07.000Z
 ```
 
 ### Step 1 — 部署合约
@@ -144,7 +148,7 @@ CallOptionToken 已部署: 0xe7f1725E7734CE288F8367e1Bb143E90bb3F0512
   - 名称:   ETH Call Option
   - 代号:   ETH-CALL
   - 行权价: 0.8 ETH
-  - 到期日: 2026-06-24T03:48:42.000Z
+  - 到期日: 2026-06-24T03:53:07.000Z
 OptionPool 已部署: 0x9fE46736679d2D9a65F0992F2272dE9f3c7fa6e0
 ```
 
@@ -199,8 +203,8 @@ Gas 消耗:                    0.000136 ETH
 Hardhat 的 `evm_setNextBlockTimestamp` 将区块链时间快进 7 天到到期日。
 
 ```
-到期日时间戳: 1782272922
-已将下一区块时间设为: 2026-06-24T03:48:42.000Z
+到期日时间戳: 1782273187
+已将下一区块时间设为: 2026-06-24T03:53:07.000Z
 ```
 
 ### Step 7 — 用户行权（行使看涨期权）
